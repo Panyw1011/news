@@ -12,9 +12,9 @@ import java.io.InputStream;
 
 public class AliOssUtil {
     private static final String ENDPOINT = "https://oss-cn-shenzhen.aliyuncs.com";
-    private static final String OSS_ACCESS_KEY_ID = "LTAI5tGGmPLkq1hPndREbAYP";
-    private static final String OSS_ACCESS_KEY_SECRET = "UZ5TEhVFz4rnVxTsGkaJjpfcziMq2n";
-    private static final String BUCKET_NAME = "news-pan";
+    private static final String OSS_ACCESS_KEY_ID = ""; //OSS_ACCESS_KEY_ID
+    private static final String OSS_ACCESS_KEY_SECRET = ""; //OSS_ACCESS_KEY_SECRET
+    private static final String BUCKET_NAME = "";   //BUCKET_NAME
     public static String uploadFile(String objectName, InputStream in) throws Exception {
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(ENDPOINT, OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET);
